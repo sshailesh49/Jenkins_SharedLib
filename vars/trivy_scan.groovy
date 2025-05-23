@@ -6,5 +6,6 @@ def call(){
                              --severity CRITICAL,HIGH,MEDIUM,LOW \
                              --format table \
                             --output trivy-fs-report.txt \
+                               .
 
 }

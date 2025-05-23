@@ -1,5 +1,5 @@
 def call(){
-                        
+                        sh """
                           if ! command -v trivy &> /dev/null
                           then
                               echo "🔍 Trivy not found, installing..."
@@ -13,6 +13,8 @@ def call(){
                               echo "✅ Trivy is already installed:" 
                               trivy --version
                           fi
+
+                      """
                       
 
 }

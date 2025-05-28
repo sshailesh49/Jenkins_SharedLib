@@ -4,6 +4,6 @@
 //  }
 //}
 
-def call(string SonarToken){
+def call(String SonarToken){
       waitForQualityGate abortPipeline: false, credentialsId: ${SonarToken}
 }

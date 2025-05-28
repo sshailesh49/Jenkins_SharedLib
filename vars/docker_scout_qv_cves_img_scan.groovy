@@ -1,6 +1,6 @@
 call(){
 
-   sh '''
+   sh """
                         echo " Running full docker-scout quickview scan..."
                         export PATH=$HOME/bin:$PATH
                         
@@ -28,5 +28,5 @@ call(){
                         # Set exit code if critical issues found (optional fail step)
                         # docker-scout quickview $IMAGE_NAME --exit-code 1 
                         # docker-scout compare  --to  $IMAGE_NAME  $PREVIOUS_IMAGE_NAME > images-comparison.json
-                    '''
+                    """
 }

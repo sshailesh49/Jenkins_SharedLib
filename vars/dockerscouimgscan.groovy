@@ -1,6 +1,6 @@
 call(){
 
-              sh """
+              sh '''
                         echo " Running full docker-scout quickview scan..."
                         export PATH=$HOME/bin:$PATH
                         
@@ -8,5 +8,5 @@ call(){
                         docker-scout cves  $IMAGE_NAME > report-cves.txt 
  
 
-               """
+               '''
 }

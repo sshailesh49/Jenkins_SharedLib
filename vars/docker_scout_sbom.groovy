@@ -1,4 +1,4 @@
-def  call(string IMAGE_NAME ){
+def  call(String IMAGE_NAME ){
            // sh " docker-scout sbom $IMAGE_NAME > sbom.json "
           sh '''
                 export PATH=$HOME/bin:$PATH
